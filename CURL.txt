@@ -1,0 +1,17 @@
+// get all courses
+curl -X GET -H "Accept: application/json" -H "Authorization: Bearer 5662c28c-6d02-4930-b9f8-758800d6d5a8" http://localhost:2019/courses/courses
+
+// get course by id
+curl -X GET -H "Accept: application/json" -H "Authorization: Bearer 5662c28c-6d02-4930-b9f8-758800d6d5a8" http://localhost:2019/courses/studcount
+
+// delete course
+curl -X DELETE -H "Accept: application/json" -H "Authorization: Bearer 5662c28c-6d02-4930-b9f8-758800d6d5a8" http://localhost:2019/courses/1
+
+// add course
+curl -X POST -H "Accept: application/json" -H "Content-Type: application/json" -H "Authorization: Bearer 5662c28c-6d02-4930-b9f8-758800d6d5a8" -d "{\"coursename\":\"curl\"}"  http://localhost:2019/courses/courses/course/add
+
+// get all students
+curl -X GET -H "Accept: application/json" -H "Authorization: Bearer 5662c28c-6d02-4930-b9f8-758800d6d5a8" http://localhost:2019/students/students
+
+// get all students with name like
+curl -X GET -H "Accept: application/json" -H "Authorization: Bearer 5662c28c-6d02-4930-b9f8-758800d6d5a8" http://localhost:2019/students/namelike/j
